@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/smallSpace">
+
+    <ImageView
+        android:id="@+id/imgAvatar"
+        android:layout_width="@dimen/largeAvatar"
+        android:layout_height="@dimen/largeAvatar"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtName"
+        app:srcCompat="@drawable/icon_card" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mediumSpace"
+        android:text="@string/name"
+        android:textSize="@dimen/largeFontSize"
+        android:textColor="@color/teal_200"
+        android:padding="@dimen/smallSpace"
+        app:layout_constraintBottom_toTopOf="@+id/txtPhone"
+        app:layout_constraintStart_toEndOf="@+id/imgAvatar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone"
+        android:textSize="@dimen/mediumFontSize"
+        android:textColor="@color/green"
+        android:padding="@dimen/smallSpace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+    <ImageView
+        android:id="@+id/imgCall"
+        android:contentDescription="@string/description"
+        android:layout_width="@dimen/smallAvatar"
+        android:layout_height="@dimen/smallAvatar"
+        android:layout_marginEnd="@dimen/largeSpace"
+        app:layout_constraintBottom_toBottomOf="@+id/txtPhone"
+        app:layout_constraintEnd_toStartOf="@+id/imgMessage"
+        app:layout_constraintTop_toTopOf="@+id/txtName"
+        app:srcCompat="@drawable/ic_baseline_phone_24" />
+
+    <ImageView
+        android:id="@+id/imgMessage"
+        android:layout_width="@dimen/smallAvatar"
+        android:layout_height="@dimen/smallAvatar"
+        android:layout_marginEnd="@dimen/mediumSpace"
+        android:contentDescription="@string/description"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCall"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgCall"
+        app:srcCompat="@drawable/ic_baseline_message_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

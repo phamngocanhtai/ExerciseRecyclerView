@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="@dimen/largeAvatar"
+        android:layout_height="@dimen/largeAvatar"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:layout_marginStart="@dimen/largeSpace"
+        android:layout_marginEnd="@dimen/largeSpace"
+        android:contentDescription="@string/description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:text="@string/name"
+        android:textSize="@dimen/mediumFontSize"
+        android:textColor="@color/teal_200"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="@+id/imgLogo"
+        app:layout_constraintStart_toStartOf="@+id/imgLogo"
+        app:layout_constraintTop_toBottomOf="@+id/imgLogo" />
+
+    <TextView
+        android:id="@+id/txtDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:layout_marginBottom="@dimen/smallSpace"
+        android:text="@string/description"
+        android:textSize="@dimen/smallFontSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtName"
+        app:layout_constraintStart_toStartOf="@+id/txtName"
+        app:layout_constraintTop_toBottomOf="@+id/txtName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ExerciseRecyclerView</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="avatar">Avatar</string>
+    <string name="description">Description</string>
+    <string name="insert">Insert</string>
+    <string name="remove">Remove</string>
+    <string name="empty">Empty</string>
+</resources>
